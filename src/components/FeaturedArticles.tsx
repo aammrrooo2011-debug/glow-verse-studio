@@ -5,28 +5,28 @@ import { Clock } from "lucide-react";
 const articles = [
   {
     id: 1,
-    title: "10 Best Vitamin C Serums for Brighter Skin in 2024",
-    excerpt: "We tested dozens of vitamin C serums to find the most effective formulations for hyperpigmentation and dull skin.",
-    category: "Product Reviews",
-    readTime: "8 min read",
+    title: "5 Daily Skincare Habits for Naturally Glowing Skin",
+    excerpt: "Unlock your natural radiance with these simple yet effective daily skincare habits that dermatologists swear by.",
+    category: "Daily Routines",
+    readTime: "5 min read",
     date: "Nov 2, 2025",
-    image: "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=800&q=80"
-  },
-  {
-    id: 2,
-    title: "The Perfect Morning Skincare Routine for Dry Skin",
-    excerpt: "Start your day with this hydrating routine designed to lock in moisture and protect your skin barrier all day long.",
-    category: "Routines",
-    readTime: "6 min read",
-    date: "Oct 28, 2025",
     image: "https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=800&q=80"
   },
   {
+    id: 2,
+    title: "Anti-Aging Secrets: How to Turn Back Time Naturally",
+    excerpt: "Discover proven anti-aging techniques and ingredients that help reduce fine lines and restore youthful vitality.",
+    category: "Anti-Aging",
+    readTime: "7 min read",
+    date: "Oct 28, 2025",
+    image: "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=800&q=80"
+  },
+  {
     id: 3,
-    title: "Retinol vs. Bakuchiol: Which One is Right for You?",
-    excerpt: "Discover the differences between these powerful anti-aging ingredients and learn which suits your skin best.",
-    category: "Ingredients",
-    readTime: "10 min read",
+    title: "The Natural Glow Guide: Achieving Luminous Skin",
+    excerpt: "Learn the science behind radiant skin and how to achieve a natural, healthy glow from within.",
+    category: "Glow Hacks",
+    readTime: "6 min read",
     date: "Oct 25, 2025",
     image: "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=800&q=80"
   },
@@ -34,14 +34,14 @@ const articles = [
 
 const FeaturedArticles = () => {
   return (
-    <section id="featured" className="py-16 md:py-24 bg-background">
+    <section id="blog" className="py-16 md:py-24 bg-gradient-to-b from-secondary/20 to-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 md:mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-playfair font-bold text-foreground mb-4">
-            Featured Articles
+            Skincare Tips & Glow Stories
           </h2>
-          <p className="text-lg text-muted-foreground font-inter max-w-2xl mx-auto">
-            Our most popular and helpful guides to achieving your best skin yet
+          <p className="text-lg text-muted-foreground font-lato max-w-2xl mx-auto">
+            Expert advice, tips, and inspiring stories to help you on your journey to radiant skin
           </p>
         </div>
 
@@ -65,7 +65,7 @@ const FeaturedArticles = () => {
                 </div>
                 
                 <div className="p-6">
-                  <div className="flex items-center gap-4 text-xs text-muted-foreground font-inter mb-3">
+                  <div className="flex items-center gap-4 text-xs text-muted-foreground font-lato mb-3">
                     <span>{article.date}</span>
                     <span className="flex items-center gap-1">
                       <Clock className="h-3 w-3" />
@@ -77,7 +77,7 @@ const FeaturedArticles = () => {
                     {article.title}
                   </h3>
                   
-                  <p className="text-sm text-muted-foreground font-inter leading-relaxed">
+                  <p className="text-sm text-muted-foreground font-lato leading-relaxed">
                     {article.excerpt}
                   </p>
                 </div>

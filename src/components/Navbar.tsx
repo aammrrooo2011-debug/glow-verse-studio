@@ -8,10 +8,10 @@ const Navbar = () => {
 
   const navLinks = [
     { name: "Home", path: "/" },
-    { name: "Product Reviews", path: "#reviews" },
-    { name: "Routines", path: "#routines" },
-    { name: "Ingredients", path: "#ingredients" },
-    { name: "Skin Types", path: "#skin-types" },
+    { name: "About", path: "#about" },
+    { name: "Products", path: "#products" },
+    { name: "Blog", path: "#blog" },
+    { name: "Contact", path: "#contact" },
   ];
 
   return (
@@ -19,9 +19,9 @@ const Navbar = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16 md:h-20">
           <Link to="/" className="flex items-center space-x-2 group">
-            <Sparkles className="h-6 w-6 text-primary transition-transform group-hover:scale-110 group-hover:rotate-12" />
+            <Sparkles className="h-6 w-6 text-gold transition-transform group-hover:scale-110 group-hover:rotate-12" />
             <span className="text-2xl font-playfair font-bold text-foreground">
-              GlowVerse
+              GlowVerse <span className="text-primary">Skincare</span>
             </span>
           </Link>
 
@@ -31,7 +31,7 @@ const Navbar = () => {
               <a
                 key={link.name}
                 href={link.path}
-                className="text-sm font-inter font-medium text-muted-foreground hover:text-primary transition-colors duration-300 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-primary after:transition-all after:duration-300 hover:after:w-full"
+                className="text-sm font-lato font-medium text-muted-foreground hover:text-primary transition-colors duration-300 relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-primary after:transition-all after:duration-300 hover:after:w-full"
               >
                 {link.name}
               </a>
@@ -57,7 +57,7 @@ const Navbar = () => {
               <a
                 key={link.name}
                 href={link.path}
-                className="block px-3 py-2 text-base font-inter font-medium text-muted-foreground hover:text-primary hover:bg-secondary/50 rounded-lg transition-colors"
+                className="block px-3 py-2 text-base font-lato font-medium text-muted-foreground hover:text-primary hover:bg-secondary/50 rounded-lg transition-colors"
                 onClick={() => setIsOpen(false)}
               >
                 {link.name}
