@@ -12,22 +12,22 @@ const Footer = () => {
             <Link to="/" className="flex items-center space-x-2 mb-4 group">
               <Sparkles className="h-6 w-6 text-gold transition-transform group-hover:scale-110 group-hover:rotate-12" />
               <span className="text-2xl font-playfair font-bold text-foreground">
-                GlowVerse <span className="text-primary">Skincare</span>
+                GlowVerse
               </span>
             </Link>
             <p className="text-muted-foreground font-lato text-sm leading-relaxed max-w-md">
-              Luxury skincare powered by science and nature. We create dermatologist-approved, 
-              cruelty-free, and eco-friendly products to help you achieve radiant, healthy skin.
+              Your go-to skincare blog for expert advice, ingredient deep-dives, 
+              and routines tailored to every skin type. Glow from within.
             </p>
           </div>
 
           <div>
-            <h3 className="font-playfair font-semibold text-foreground mb-4">Quick Links</h3>
+            <h3 className="font-playfair font-semibold text-foreground mb-4">Categories</h3>
             <ul className="space-y-2">
-              {["About Us", "Contact", "Privacy Policy", "Terms of Service"].map((link) => (
+              {["Daily Routines", "Ingredients", "Skin Types", "Anti-Aging", "Sun Care"].map((link) => (
                 <li key={link}>
                   <a 
-                    href="#" 
+                    href="#articles" 
                     className="text-sm text-muted-foreground hover:text-primary transition-colors font-lato"
                   >
                     {link}
@@ -61,7 +61,7 @@ const Footer = () => {
 
         <div className="border-t border-border mt-8 pt-8 text-center">
           <p className="text-sm text-muted-foreground font-lato">
-            © {currentYear} GlowVerse Skincare. All rights reserved. Luxury skincare for radiant skin.
+            © {currentYear} GlowVerse. All rights reserved.
           </p>
         </div>
       </div>
