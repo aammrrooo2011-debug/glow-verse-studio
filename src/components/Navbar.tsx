@@ -1,17 +1,16 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X, Sparkles } from "lucide-react";
-import { Button } from "@/components/ui/button";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
-    { name: "Home", path: "/" },
+    { name: "Home", path: "#" },
+    { name: "Articles", path: "#articles" },
+    { name: "Routines", path: "#articles" },
+    { name: "Ingredients", path: "#articles" },
     { name: "About", path: "#about" },
-    { name: "Products", path: "#products" },
-    { name: "Blog", path: "#blog" },
-    { name: "Contact", path: "#contact" },
   ];
 
   return (
@@ -21,7 +20,7 @@ const Navbar = () => {
           <Link to="/" className="flex items-center space-x-2 group">
             <Sparkles className="h-6 w-6 text-gold transition-transform group-hover:scale-110 group-hover:rotate-12" />
             <span className="text-2xl font-playfair font-bold text-foreground">
-              GlowVerse <span className="text-primary">Skincare</span>
+              GlowVerse
             </span>
           </Link>
 
